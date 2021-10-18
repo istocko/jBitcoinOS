@@ -56,6 +56,11 @@ The build will result in the following files:
 *On VMWare*: Open `all/build/cdroms/jnode-x86-lite.iso.vmx` and click Start.  
 *On Linux*:  `qemu.sh`  
 
+## After Booting  start GUI by command
+
+*gc
+*startawt
+
 ## Questions
 
 If you have any questions, please post them to the forums at www.jnode.org
