@@ -216,9 +216,40 @@ public class Desktop implements Runnable {
                 desktopColor.addActionListener(desktopColorAction);
                 desktopMenu.add(desktopColor);
                 
+                
+                
                 for (JMenuItem item : taskBar.chgSizeMenuItem) {
                     desktopMenu.add(item);
                 }
+                
+                JMenuItem support = new JMenuItem("Support by extremesystems.sk");
+                support.addActionListener(new ActionListener() {
+                    private JFrame frame;
+                    public void actionPerformed(ActionEvent e) {
+                        //if (frame == null) {
+                        frame = new JFrame("Support by ExtremeSystems.SK");
+                        JButton ok = new JButton("OK");
+                        ok.addActionListener(new ActionListener() {
+                            public void actionPerformed(ActionEvent event) {
+                                frame.setVisible(false);
+                                frame.dispose();
+                            }
+                        });
+                        JPanel buttons = new JPanel();
+                        buttons.add(ok);
+                        frame.add(buttons, BorderLayout.SOUTH);
+                        //}
+
+                        Dimension ss = Toolkit.getDefaultToolkit().getScreenSize();
+                        int x = (ss.width - 500) / 2;
+                        int y = (ss.height - 400) / 2;
+                        frame.setSize(500, 400);
+                        frame.setVisible(true);
+                        frame.setLocation(x, y);
+                    }
+                });
+                
+                desktopMenu.add(support);
                 
                 desktopPane.addMouseListener(new MouseAdapter() {
                     public void mousePressed(MouseEvent event) {
