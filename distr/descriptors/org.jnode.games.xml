@@ -37,6 +37,7 @@
       <export name="org.jnode.games.boxworld.*"/>
       <export name="org.jnode.games.rubik.*"/>
       <export name="org.jnode.games.tetris.*"/>
+      <export name="org.jnode.games.tvp.*"/>
     </library>
   </runtime>
         
@@ -44,6 +45,7 @@
     <application name="BoxWorld"    class="org.jnode.games.boxworld.BoxWorld"/>
     <application name="Rubik"       class="org.jnode.games.rubik.Rubik"/>
     <application name="Tetris"      class="org.jnode.games.tetris.Tetris"/>
+    <application name="TeslavsPorsche"      class="org.jnode.games.tvp.TeslavsPorsche"/>
   </extension>
 
   <extension point="org.jnode.security.permissions">
@@ -60,6 +62,7 @@
     <alias name="BoxWorld"      class="org.jnode.games.boxworld.BoxWorld"/>
     <alias name="Rubik"         class="org.jnode.games.rubik.Rubik"/>
     <alias name="Tetris"        class="org.jnode.games.tetris.Tetris"/>
+    <alias name="TeslavsPorsche"        class="org.jnode.games.tvp.TeslavsPorsche"/>
   </extension>
         
 </plugin>

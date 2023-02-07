@@ -114,6 +114,7 @@ public class TaskBar extends JPanel {
         JMenu gamesMenu = new JMenu("Games");
         startMenu.add(gamesMenu);
 
+        gamesMenu.add(createMenuItem("Tesla vs. Porsche East SLovakia Championship", "org.jnode.games.tvp.TeslavsPorsche"));
         gamesMenu.add(createMenuItem("Tetris", "org.jnode.games.tetris.Tetris"));
         gamesMenu.add(createMenuItem("BoxWorld", "org.jnode.games.boxworld.BoxWorld"));
         gamesMenu.add(createMenuItem("Rubik", "org.jnode.games.rubik.Rubik"));
