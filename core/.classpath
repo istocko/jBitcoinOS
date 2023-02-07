@@ -27,6 +27,6 @@
 		</accessrules>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/ant-contrib-1.0b3.jar"/>
-	<classpathentry kind="lib" path="/all/lib/classlib.jar" sourcepath="/all/lib/classlib-src.jar"/>
+	<classpathentry kind="lib" path="C:/Users/neo/Documents/GitHub/jnode/all/lib/classlib.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
